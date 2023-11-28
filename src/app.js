@@ -8,6 +8,8 @@ const publicPath = (path.resolve (__dirname, './public'));
 
 app.use (express.static(publicPath));
 
+
+const port = process.env.PORT || 3030;
 app.listen (3030,()=>
 console.log ('Esta corriendo'));
 
